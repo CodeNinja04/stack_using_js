@@ -1,4 +1,4 @@
-//var push = document.getElementById("push");
+
 var push_btn = document.getElementById("push-btn");
 var pop = document.getElementById("pop-btn");
 var size = document.getElementById("size-stack");
@@ -46,17 +46,7 @@ class Stack {
 
     }
 }
-/*reverse() {
-        this._reverse(this.top - 1);
-    }
-    _reverse(index) {
-        if (index != 0) {
-            this._reverse(index - 1);
-        }
-        console.log(this.data[index]);
-    }
-}
-*/
+
 let mainstack;
 
 mainstack = new Stack();
