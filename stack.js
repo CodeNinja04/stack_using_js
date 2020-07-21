@@ -53,12 +53,17 @@ mainstack = new Stack();
 
 push_btn.addEventListener("click", function() {
     var y = document.getElementById("push-input").value;
-    mainstack.pushd(y);
-    document.getElementById("push-input").value = "";
-    mainstack.length();
-    mainstack.print();
-    console.log(mainstack.top);
+    if (y == "") {
+        document.getElementById("temp").innerHTML = "please Enter some value";
+    } else {
+        mainstack.pushd(y);
+        document.getElementById("push-input").value = "";
+        mainstack.length();
+        mainstack.print();
+        console.log(mainstack.top);
+    }
 })
+
 
 
 pop.addEventListener("click", function() {
