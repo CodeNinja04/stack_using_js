@@ -41,7 +41,7 @@ class Stack {
 
         display.innerHTML = "";
         this.data.forEach(function(x) {
-            display.innerHTML += "<div class='block'>" + x + "</div>"
+            display.innerHTML += "<div class='display-text'>" + x + "</div>"
         })
 
     }
